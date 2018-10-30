@@ -15,7 +15,7 @@
    
     <div class="container">
         <div class="page-header">
-            <img src="interact.jpeg" alt="Interact Logo">
+            <img src="Interact_Logo_Strapline.png" alt="Interact Logo">
             <h1>Interact Communication Test</h1>
             <h3>
                 Learn what communication type you are with the
@@ -32,7 +32,7 @@
                     placeholder="Search..." 
                     class="form-control"
                     ng-model="list.search">
-                <button class="btn btn-warning pull-right"
+                <button class="button1"
                     ng-click="list.activateQuiz()">
                     <strong>Start Quiz</strong>
                 </button>
@@ -53,7 +53,7 @@
                             </div>
                             <div class="col-md-6">
                             	<!-- ng-src instead of src to allow correct functionality with angular -->
-                                <h4>{{turtle.type}}</h4>
+                                <h4><strong>{{turtle.type}}</strong></h4>
                                 <!-- more angular data binding -->
                                 <p><strong>Locations: </strong>{{turtle.locations}}</p>
                                 <p><strong>Size: </strong>{{turtle.size}}</p>
@@ -61,7 +61,7 @@
                                 <p><strong>Diet: </strong>{{turtle.diet}}</p>
                                 <!-- ng-click is an angular directive to allow click events within angular -->
                         		<!-- data-toggle and data-target are bootstrap attributes to trigger the popup modal -->
-                                <button class="btn btn-primary pull-right"
+                                <button class="button2"
                                     data-toggle="modal"
                                     data-target="#turtle-info"
                                     ng-click="list.changeActiveTurtle(turtle)">Learn More</button>

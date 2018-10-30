@@ -51,7 +51,7 @@
             /*
              * simply calculating the percentage of correct answers and returning the number
              */
-            return quizMetrics.numCorrect / DataService.quizQuestions.length * 100;
+            return quizMetrics.ACorrect / DataService.quizQuestions.length * 100;
         }
 
         function setActiveQuestion(index){
@@ -71,7 +71,7 @@
              * to the quizMetrics service. But as we are in the controller
              * we can directly manipulate it
              */
-            if(index === quizMetrics.correctAnswers[vm.activeQuestion]){
+            if(index === quizMetrics.A[vm.activeQuestion]){
                 return "bg-success";
             }else if(index === DataService.quizQuestions[vm.activeQuestion].selected){
                 return "bg-danger";
@@ -88,7 +88,7 @@
              * questions.
              */
             quizMetrics.changeState("results", false);
-            quizMetrics.numCorrect = 0;
+            quizMetrics.ACorrect = 0;
 
             for(var i = 0; i < DataService.quizQuestions.length; i++){
                 var data = DataService.quizQuestions[i]; //binding the current question to data to keep code clean

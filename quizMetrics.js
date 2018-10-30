@@ -55,6 +55,10 @@
                 E: [],
                 I: [],
                 markQuiz: markQuiz, // markQuiz is a named function below
+                getA: getA,
+                getP: getP,
+                getE: getE, 
+                getI: getI,
                 numCorrect: 0,
                 ACorrect:0,
                 PCorrect:0,
@@ -110,12 +114,12 @@
 
             function getA(){
                 quizObj.A = DataService.A;
-                for(var i = 0; i < DataService.A.length; i++){
-                    if(DataService.A[i].selected === DataService.A[i]){
-                        DataService.A[i].correct = true;
+                for(var i = 0; i < DataService.quizQuestions.length; i++){
+                    if(DataService.quizQuestions[i].selected === DataService.A[i]){
+                        DataService.quizQuestions[i].correct = true;
                         quizObj.ACorrect++;
                     }else{
-                        DataService.A[i].correct = false;
+                        DataService.quizQuestions[i].correct = false;
                     }
                 }
             }
@@ -124,12 +128,12 @@
 
             function getP(){
                 quizObj.P = DataService.P;
-                for(var i = 0; i < DataService.P.length; i++){
-                    if(DataService.P[i].selected === DataService.P[i]){
-                        DataService.P[i].correct = true;
+                for(var i = 0; i < DataService.quizQuestions.length; i++){
+                    if(DataService.quizQuestions[i].selected === DataService.P[i]){
+                        DataService.quizQuestions[i].correct = true;
                         quizObj.PCorrect++;
                     }else{
-                        DataService.P[i].correct = false;
+                        DataService.quizQuestions[i].correct = false;
                     }
                 }
             }
@@ -138,12 +142,12 @@
 
             function getE(){
                 quizObj.E = DataService.E;
-                for(var i = 0; i < DataService.E.length; i++){
-                    if(DataService.E[i].selected === DataService.E[i]){
-                        DataService.E[i].correct = true;
+                for(var i = 0; i < DataService.quizQuestions.length; i++){
+                    if(DataService.quizQuestions[i].selected === DataService.E[i]){
+                        DataService.quizQuestions[i].correct = true;
                         quizObj.ECorrect++;
                     }else{
-                        DataService.E[i].correct = false;
+                        DataService.quizQuestions[i].correct = false;
                     }
                 }
             }
@@ -152,9 +156,9 @@
 
             function getI(){
                 quizObj.I = DataService.I;
-                for(var i = 0; i < DataService.I.length; i++){
-                    if(DataService.I[i].selected === DataService.I[i]){
-                        DataService.I[i].correct = true;
+                for(var i = 0; i < DataService.quizQuestions.length; i++){
+                    if(DataService.quizQuestions[i].selected === DataService.I[i]){
+                        DataService.quizQuestions[i].correct = true;
                         quizObj.ICorrect++;
                     }else{
                         DataService.I[i].correct = false;

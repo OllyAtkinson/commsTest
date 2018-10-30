@@ -24,7 +24,11 @@
         var dataObj = {
             turtlesData: turtlesData,
             quizQuestions: quizQuestions,
-            correctAnswers: correctAnswers
+            correctAnswers: correctAnswers,
+            A: A,
+            P: P,
+            E: E,
+            I: I
         };
 
         // returning the dataObj to anything that uses this factory as a 
@@ -329,7 +333,7 @@
     var turtlesData = [
         {
             type: "Extrovert",
-            image_url: "http://i.telegraph.co.uk/multimedia/archive/02651/loggerheadTurtle_2651448b.jpg",
+            image_url: "extrovert.jpeg",
             locations: "Tropical and subtropical oceans worldwide",
             size: "90cm, 115kg",
             lifespan: "More than 50 years",
@@ -338,7 +342,7 @@
         },
         {
             type: "Introvert",
-            image_url: "http://i.telegraph.co.uk/multimedia/archive/02651/loggerheadTurtle_2651448b.jpg",
+            image_url: "introvert.jpeg",
             locations: "Tropical and subtropical oceans worldwide",
             size: "90cm, 115kg",
             lifespan: "More than 50 years",
@@ -347,7 +351,7 @@
         },
         {
             type: "Assertive",
-            image_url: "https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/8/13/1313246505515/Leatherback-turtle-007.jpg",
+            image_url: "assertive.jpeg",
             locations: "All tropical and subtropical oceans",
             size: "Up to 2m, up to 900kg",
             lifespan: "45 years",
@@ -356,7 +360,7 @@
         },
         {
             type: "Passive",
-            image_url: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532",
+            image_url: "passive.jpeg",
             locations: "Tropical Coastal areas around the world",
             size: "Over 1m, 45-68kg",
             lifespan: "30-50 Years",
