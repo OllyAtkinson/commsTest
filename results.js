@@ -45,6 +45,9 @@
         vm.setActiveQuestion = setActiveQuestion; // named function defined below
         vm.reset = reset; // named function defined below
         vm.calculatePerc = calculatePerc; // named function defined below
+        vm.calculateX = calculateX;
+        vm.calculateY = calculateY;
+        vm.findCommType = findCommType;
         vm.activeQuestion = 0;
 
         function calculatePerc(){
@@ -53,6 +56,41 @@
              */
             return quizMetrics.ACorrect / DataService.quizQuestions.length * 100;
         }
+
+
+        function calculateX(){
+            xValue = quizMetrics.ACorrect - quizMetrics.PCorrect;
+            return xValue;
+        }
+
+
+        function calculateY(){
+            yValue = quizMetrics.ECorrect - quizMetrics.ICorrect;
+            return yValue;
+        }
+
+
+
+        
+        function findCommType(){
+            if (yValue > 0 && xValue > 0){
+                finalResult = "Enthusiastic";
+            }
+            else if (yValue > 0 && xValue < 0){
+                finalResult = "Targeted";
+            }
+            else if (yValue < 0 && xValue > 0){
+                finalResult = "Accomodating";
+            }
+            else if (yValue < 0 && xValue > 0){
+                finalResult = "Passive";
+            }
+            else{
+                finalResult = "Unconclusive";
+            }
+            return finalResult;
+        }
+        
 
         function setActiveQuestion(index){
             /*
@@ -88,7 +126,12 @@
              * questions.
              */
             quizMetrics.changeState("results", false);
-            quizMetrics.ACorrect = 0;
+            quizMetrics.numCorrect = 0;
+            quizMetrics.A = 0;
+            quizMetrics.P = 0;
+            quizMetrics.E = 0;
+            quizMetrics.I = 0;
+
 
             for(var i = 0; i < DataService.quizQuestions.length; i++){
                 var data = DataService.quizQuestions[i]; //binding the current question to data to keep code clean

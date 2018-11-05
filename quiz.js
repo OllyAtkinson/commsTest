@@ -47,10 +47,13 @@
         vm.setActiveQuestion = setActiveQuestion; // setActiveQuestion is a named function below
         vm.selectAnswer = selectAnswer; // also a named function
         vm.finaliseAnswers = finaliseAnswers; //also a named function
+        vm.grabEmail = grabEmail;
         vm.activeQuestion = 0; // currently active question in the quiz
         vm.error = false; // error flag. Will be set when user tries to finish quiz with 
+        vm.email = false;
         vm.finalise = false; // finalise flag. Will be set to show prompt to end quiz with
                              // all questions answered
+
 
         var numQuestionsAnswered = 0; // This is not needed by the view so is only declared using var
 
@@ -153,6 +156,7 @@
                     // set finalise flag and remove any existing warnings
                     vm.error = false;
                     vm.finalise = true;
+                    vm.email = true;
                     return;
                 }
             }
@@ -192,9 +196,18 @@
             vm.finalise = false;
             numQuestionsAnswered = 0;
             vm.activeQuestion = 0;
-            quizMetrics.markQuiz();
+            //quizMetrics.markQuiz();
+            quizMetrics.getA();
+            quizMetrics.getP();
+            quizMetrics.getE();
+            quizMetrics.getI();
             quizMetrics.changeState("quiz", false);
             quizMetrics.changeState("results", true);
+        }
+
+
+        function grabEmail(){
+            //document.write(5 + 6);
         }
     }
 

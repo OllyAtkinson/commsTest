@@ -63,7 +63,9 @@
                 ACorrect:0,
                 PCorrect:0,
                 ECorrect:0,
-                ICorrect:0
+                ICorrect:0,
+                xValue: 0,
+                yValue: 0
             };
 
             /*
@@ -170,10 +172,16 @@
 
             function getX(){
                 var xValue = (ACorrect-PCorrect)
+                return xValue;
             }
 
             function gety(){
-                var yValue = (ECorrect-ICorrect)
+                var yValue = (ECorrect-ICorrect);
+                return yValue;
+            }
+
+            function getCommType(){
+                //find what type of communcator it
             }
 
         }

@@ -70,7 +70,7 @@
     var A = [0, 0, 4, 4, 0, 1, 4, 4, 1, 4, 0, 4, 4, 0, 4, 4, 0, 0];
     var P = [1, 1, 4, 4, 1, 0, 4, 4, 0, 4, 1, 4, 4, 1, 4, 4, 1, 1];
     var E = [4, 4, 0, 1, 4, 4, 0, 1, 4, 0, 4, 1, 0, 4, 0, 0, 4, 4];
-    var I = [4, 4, 1, 1, 4, 4, 1, 0, 4, 1, 4, 0, 1, 4, 1, 1, 4, 4];
+    var I = [4, 4, 1, 0, 4, 4, 1, 0, 4, 1, 4, 0, 1, 4, 1, 1, 4, 4];
 
     var quizQuestions  = [
         {
@@ -332,16 +332,7 @@
 
     var turtlesData = [
         {
-            type: "Extrovert",
-            image_url: "extrovert.jpeg",
-            locations: "Tropical and subtropical oceans worldwide",
-            size: "90cm, 115kg",
-            lifespan: "More than 50 years",
-            diet: "Carnivore",
-            description: "Loggerhead turtles are the most abundant of all the marine turtle species in U.S. waters. But persistent population declines due to pollution, shrimp trawling, and development in their nesting areas, among other factors, have kept this wide-ranging seagoer on the threatened species list since 1978. Their enormous range encompasses all but the most frigid waters of the world's oceans. They seem to prefer coastal habitats, but often frequent inland water bodies and will travel hundreds of miles out to sea."
-        },
-        {
-            type: "Introvert",
+            type: "Targeted",
             image_url: "introvert.jpeg",
             locations: "Tropical and subtropical oceans worldwide",
             size: "90cm, 115kg",
@@ -350,16 +341,16 @@
             description: "Loggerhead turtles are the most abundant of all the marine turtle species in U.S. waters. But persistent population declines due to pollution, shrimp trawling, and development in their nesting areas, among other factors, have kept this wide-ranging seagoer on the threatened species list since 1978. Their enormous range encompasses all but the most frigid waters of the world's oceans. They seem to prefer coastal habitats, but often frequent inland water bodies and will travel hundreds of miles out to sea."
         },
         {
-            type: "Assertive",
-            image_url: "assertive.jpeg",
-            locations: "All tropical and subtropical oceans",
-            size: "Up to 2m, up to 900kg",
-            lifespan: "45 years",
+            type: "Enthusiastic",
+            image_url: "extrovert.jpeg",
+            locations: "Tropical and subtropical oceans worldwide",
+            size: "90cm, 115kg",
+            lifespan: "More than 50 years",
             diet: "Carnivore",
-            description: "Leatherbacks are the largest turtles on Earth, growing up to seven feet (two meters) long and exceeding 2,000 pounds (900 kilograms). These reptilian relics are the only remaining representatives of a family of turtles that traces its evolutionary roots back more than 100 million years. Once prevalent in every ocean except the Arctic and Antarctic, the leatherback population is rapidly declining in many parts of the world. While all other sea turtles have hard, bony shells, the inky-blue carapace of the leatherback is somewhat flexible and almost rubbery to the touch. Ridges along the carapace help give it a more hydrodynamic structure. Leatherbacks can dive to depths of 4,200 feet (1,280 meters)—deeper than any other turtle—and can stay down for up to 85 minutes."
+            description: "Loggerhead turtles are the most abundant of all the marine turtle species in U.S. waters. But persistent population declines due to pollution, shrimp trawling, and development in their nesting areas, among other factors, have kept this wide-ranging seagoer on the threatened species list since 1978. Their enormous range encompasses all but the most frigid waters of the world's oceans. They seem to prefer coastal habitats, but often frequent inland water bodies and will travel hundreds of miles out to sea."
         },
         {
-            type: "Passive",
+            type: "Methodical",
             image_url: "passive.jpeg",
             locations: "Tropical Coastal areas around the world",
             size: "Over 1m, 45-68kg",
@@ -367,6 +358,16 @@
             diet: "Carnivore",
             description: "Dolor possimus voluptas hic aliquam rem doloremque minus maiores accusantium? Laborum perferendis harum blanditiis quod quia? Aspernatur sunt et fuga delectus ab rem excepturi. Ipsa quibusdam facere consequuntur magnam vitae? Consectetur consectetur necessitatibus beatae delectus quibusdam in! Est nobis omnis iusto illum fugiat maxime! Neque fugiat reiciendis sequi corrupti minima facere distinctio aliquam est voluptatibus. Sint incidunt soluta atque ducimus."
         },
+        {
+            type: "Accomodating",
+            image_url: "assertive.jpeg",
+            locations: "All tropical and subtropical oceans",
+            size: "Up to 2m, up to 900kg",
+            lifespan: "45 years",
+            diet: "Carnivore",
+            description: "Leatherbacks are the largest turtles on Earth, growing up to seven feet (two meters) long and exceeding 2,000 pounds (900 kilograms). These reptilian relics are the only remaining representatives of a family of turtles that traces its evolutionary roots back more than 100 million years. Once prevalent in every ocean except the Arctic and Antarctic, the leatherback population is rapidly declining in many parts of the world. While all other sea turtles have hard, bony shells, the inky-blue carapace of the leatherback is somewhat flexible and almost rubbery to the touch. Ridges along the carapace help give it a more hydrodynamic structure. Leatherbacks can dive to depths of 4,200 feet (1,280 meters)—deeper than any other turtle—and can stay down for up to 85 minutes."
+        },
+
     ];
 
 })();

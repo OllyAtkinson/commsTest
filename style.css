@@ -22,6 +22,36 @@ body{
     border-radius: 4px;
     padding: 8px;
 }
+.button3{
+    color: white;
+    background-color: #D20E68;
+    float: right;
+    font-family: "Helvetica Neue Light", "Helvetica Neue Bold";
+    border-radius: 4px;
+    padding: 8px;
+}
+.button-warning{
+    color: green;
+    background-color: #0E4388;
+    float: right;
+    font-family: "Helvetica Neue Light", "Helvetica Neue Bold";
+    border-radius: 4px;
+    padding: 8px;
+}
+.glyphicon-pencil{
+    color: #F5F5F4;
+}
+.glyphicon-question-sign{
+    color: #F5F5F4;
+}
+.btn-info{
+    background-color: #1C9591;
+}
+.btn-danger{
+    background-color: #E96752;
+}
+
+
 
 .well-image{
     width: 100%;
