@@ -12,10 +12,10 @@ let myChart = document.getElementById('myChart').getContext('2d');
         datasets:[{
           label:'Score',
           data:[
-            7,
-            2,
-            5,
-            4,
+            integer,
+            PCorrect,
+            ECorrect,
+            ICorrect,
             0.0001
           ],
           //backgroundColor:'green',

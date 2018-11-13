@@ -46,7 +46,6 @@ if(isset($_POST['submitted']))
 </head>
 <body>
 <section id="contact">
-            <div class="s-12 m-12 l-5">
             <div class="form">
               <!--<div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage">Error message, please try again.</div>-->
@@ -62,7 +61,7 @@ if(isset($_POST['submitted']))
               <div class='short_explanation'>* required fields</div>
               <div><span class='error'><?php //echo $formproc->GetErrorMessage(); ?></span></div>-->
                 <div class="col=xs=12">
-                  <h2>To get your results emailed, please enter the following details:</h2>
+                  <h2>Please enter your details to view your results</h2>
                 </div>
 
                 <div class="form-group">
@@ -77,16 +76,16 @@ if(isset($_POST['submitted']))
                 </div>
                 
                 <div class="form-group">
-                  <input type="text" class="form-control" name="number" id="company" placeholder="Company" value='<?php echo $formproc->SafeDisplay('number') ?>' data-rule="minlen:10" data-msg="Please Enter your Company" />
+                  <input type="text" class="form-control" name="company" id="company" placeholder="Company" value='<?php echo $formproc->SafeDisplay('number') ?>' data-rule="minlen:10" data-msg="Please Enter your Company" />
                   <div class="validation"></div>
                 </div>
                 
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="position" placeholder="Role/Position" value='<?php echo $formproc->SafeDisplay('occasion') ?>' data-rule="minlen:4" data-msg="Please Enter your Role/Position" />
+                  <input type="text" class="form-control" name="position" id="position" placeholder="Role/Position" value='<?php echo $formproc->SafeDisplay('occasion') ?>' data-rule="minlen:4" data-msg="Please Enter your Role/Position" />
                   <div class="validation"></div>
                 </div>
 
-                <div <p><input type="checkbox" name="terms" value='<?php echo $formproc->SafeDisplay('terms') ?>'>Please confirm that you accept the <u>Terms and Conditions</u> when recieving </p> </div>
+                <div <p><input type="checkbox" name="terms" value='<?php echo $formproc->SafeDisplay('terms') ?>'>Please confirm that you accept the <u>Terms and Conditions</u></p> </div>
 
 
                   <div class="validation"></div>
@@ -100,12 +99,11 @@ if(isset($_POST['submitted']))
                 <a href='javascript: refresh_captcha_img();'><br>Click here to refresh</a></div>
                 </div>
 
-                <div class="button2"><button type="submit" name='Submit' value='Submit'>Recieve Results</button></div>
+                <div class="text-center"><button class ="buttonSubmit" type="submit" name='Submit' value='Submit'>Recieve Results</button></div>
               </form>
             </div>
           </div>
 
-        </div>
       </section>
 
 <script type='text/javascript'>
